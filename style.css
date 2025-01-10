@@ -1,0 +1,86 @@
+body {
+  direction: rtl;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+
+.ads-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.ads-container .card {
+  flex: 1 1 calc(33.333% - 1rem);
+  max-width: calc(33.333% - 1rem);
+  border-radius: 12px;
+}
+
+.card-body {
+  border-radius: 12px;
+}
+
+.badge {
+  opacity: 0.85;
+}
+
+.room-badge {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 0.15rem 0.5rem;
+  margin: 0 5px;
+  font-size: .9rem;
+}
+
+.price {
+  color: #4a4a4a;
+}
+
+.btn-group .btn {
+  margin-inline: 0.25rem;
+}
+.badge.bg-primary{
+    background-color: #ebf7fd !important;
+    color: #278fc3 !important;
+}
+
+.image-card{
+    height: 200px;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    align-items: end;
+    position: relative;
+    overflow: hidden;
+    /* flex: 1 1 calc(33.333% - 1rem); */
+    max-width: calc(33.333% - 2rem);
+}
+.image-card::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, #242424a6 20%,#4a4a4a0a);
+    width: 100%;
+    height: 100%;
+}
+.image-card span{
+    z-index: 2;
+}
+
+.icon-badge{
+    color: orange;
+    background: rgba(255, 166, 0, 0.1);
+    width: fit-content;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
